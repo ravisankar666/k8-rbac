@@ -11,18 +11,18 @@ data:
       - roboshop-trainee
       userarn: arn:aws:iam::160885265516:user/suresh
       username: suresh
-    - groups:
-      - roboshop-admin
-      userarn: arn:aws:iam::160885265516:user/ramesh
-      username: ramesh
-    - groups:
-      - roboshop-trainee
-      userarn: arn:aws:iam::160885265516:user/john
-      username: john
-    - groups:
-      - roboshop-trainee
-      userarn: arn:aws:iam::160885265516:user/rahim
-      username: rahim
+    # - groups:
+    #   - roboshop-admin
+    #   userarn: arn:aws:iam::160885265516:user/ramesh
+    #   username: ramesh
+    # - groups:
+    #   - roboshop-trainee
+    #   userarn: arn:aws:iam::160885265516:user/john
+    #   username: john
+    # - groups:
+    #   - roboshop-trainee
+    #   userarn: arn:aws:iam::160885265516:user/rahim
+    #   username: rahim
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-12-11T01:49:27Z"
@@ -30,4 +30,6 @@ metadata:
   namespace: kube-system
   uid: 33956aae-bab6-40e4-af5b-8e3b202d922e
 
-  
+
+
+#already we did aws configmap in vm or workshop , aws configure provide the auth to kubernetes.( we taking authantication from aws -iam )
